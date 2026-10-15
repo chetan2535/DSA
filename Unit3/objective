@@ -1,0 +1,5 @@
+To create and manage student records using a singly linked list.
+To insert student records at the beginning and end.
+To delete a student record using roll number.
+To search for a student record by roll number.
+To display all student records.
