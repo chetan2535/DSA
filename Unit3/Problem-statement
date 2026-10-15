@@ -1,0 +1,5 @@
+## Problem Statement: Student Record Management System
+
+To develop a Student Record Management System using a Singly Linked List in C++ to store and manage student
+information efficiently. The system should allow users to insert student records at the beginning or end, delete a record, 
+search for a student by roll number, and display all student records. This system helps in organizing and managing student information easily.
