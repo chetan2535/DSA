@@ -1,0 +1,5 @@
+Modified problem statement
+To develop an improved Student Record Management System using a singly linked list in C++. 
+The system should allow users to insert, display, search, delete, and update student records.
+It should also provide a facility to sort student records according to marks in descending order. 
+This system helps manage student information efficiently and demonstrates the practical use of linked-list operations.
