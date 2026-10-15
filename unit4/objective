@@ -1,0 +1,6 @@
+Objectives
+
+To understand the concept of a binary tree.
+To create a binary tree using C++.
+To interchange the left and right children of every node.
+To display the original and mirror image of the tree.
