@@ -1,0 +1,58 @@
+#include <iostream>
+using namespace std;
+
+struct Node {
+    int data;
+    Node *left, *right;
+};
+
+Node* create() {
+    int x;
+    cin >> x;
+
+    if (x == -1)
+        return NULL;
+
+    Node* p = new Node;
+    p->data = x;
+    p->left = create();
+    p->right = create();
+
+    return p;
+}
+
+void show(Node* root) {
+    if (root == NULL)
+        return;
+
+    show(root->left);
+    cout << root->data << " ";
+    show(root->right);
+}
+
+void makeMirror(Node* root) {
+    if (root == NULL)
+        return;
+
+    swap(root->left, root->right);
+
+    makeMirror(root->left);
+    makeMirror(root->right);
+}
+
+int main() {
+    Node* root;
+
+    cout << "Enter nodes (-1 for NULL): ";
+    root = create();
+
+    cout << "Original tree: ";
+    show(root);
+
+    makeMirror(root);
+
+    cout << "\nMirror tree: ";
+    show(root);
+
+    return 0;
+}
