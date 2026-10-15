@@ -1,0 +1,14 @@
+Algorithm: Student Record Management System
+
+Start.
+Initialize the head pointer to NULL.
+Display the menu: Insert, Display, Search, Delete, and Exit.
+Enter the user's choice.
+Perform the selected operation:
+Insert: Enter the student's roll number and name, create a new node, and add it to the linked list.
+Display: Traverse the linked list and display all student records.
+Search: Enter the roll number and search for the student record.
+Delete: Enter the roll number, find the record, and delete the corresponding node.
+Exit: Terminate the program.
+If the choice is not Exit, display the menu again.
+Stop.
