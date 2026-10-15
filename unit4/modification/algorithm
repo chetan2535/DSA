@@ -1,0 +1,8 @@
+Start.
+Create a binary tree by entering node values in preorder.
+Use -1 to indicate a NULL node.
+Display the original tree using inorder traversal.
+Interchange the left and right children of each node.
+Repeat the swapping operation recursively for every node.
+Display the mirror image using inorder traversal.
+Stop.
