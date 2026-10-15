@@ -1,0 +1,9 @@
+Algorithm
+
+Start.
+Create a binary tree.
+Display the original tree using inorder traversal.
+Interchange the left and right children of each node.
+Repeat the process for all nodes recursively.
+Display the mirror image of the tree.
+Stop.
