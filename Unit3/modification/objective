@@ -1,8 +1,0 @@
-
-To create student records using a singly linked list.
-To insert and display student details.
-To search for a student using the roll number.
-To delete a particular student record.
-To update student details and marks.
-To sort student records according to marks.
-To understand dynamic memory allocation and linked-list operations in C++.
