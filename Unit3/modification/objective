@@ -1,0 +1,8 @@
+To implement a doubly linked list in C++.
+To store student roll number, name, and marks.
+To insert and display student records.
+To search for a student using roll number.
+To delete and update student records.
+To sort records by marks in descending order.
+To display records in reverse order.
+To understand how prev and next pointers work.
