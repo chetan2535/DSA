@@ -1,0 +1,11 @@
+Start.
+Create a binary tree using user input. Enter -1 to represent an empty node.
+Count the total number of nodes in the original tree.
+Calculate the height of the original tree.
+Display the original inorder traversal.
+Mirror the tree by swapping the left and right children of each node.
+Display the mirrored inorder traversal.
+Compare the node counts and heights of the original and mirrored trees.
+Mirror the tree again to restore the original structure.
+Display the restored inorder traversal and verify that it matches the original traversal.
+Stop.
