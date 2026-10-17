@@ -1,0 +1,4 @@
+To develop a C++ program to find the mirror image of a binary tree by swapping the 
+left and right children of every node. The program displays the original and 
+mirrored tree traversals side by side, mirrors the tree twice to verify that the 
+original structure is restored, and compares the number of nodes and height before and after mirroring.
