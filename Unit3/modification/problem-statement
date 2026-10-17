@@ -1,0 +1,4 @@
+To develop a Student Record Management System using a doubly linked list in C++. 
+The system should allow users to insert, display, search, delete, and update student records,
+sort records according to marks in descending order, and display records in reverse order. 
+The system maintains both previous and next pointers to support traversal in both directions and efficient record management.
