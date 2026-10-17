@@ -1,0 +1,16 @@
+Start.
+Initialize head = NULL and tail = NULL.
+Display the menu of operations.
+Accept the user's choice.
+Perform the selected operation:
+Insert: Create a new node and connect it to the last node using prev and next.
+Display: Traverse from head to tail and display all records.
+Search: Find the record using the student's roll number.
+Delete: Find the student and adjust both previous and next links before deleting the node.
+Update: Change the name and marks of the selected student.
+Sort: Arrange student records by marks from highest to lowest.
+Reverse Display: Traverse from tail to head.
+Exit: Terminate the program.
+Display the result.
+If the choice is not 8, return to the menu.
+Stop.
