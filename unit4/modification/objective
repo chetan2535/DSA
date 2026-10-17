@@ -1,0 +1,5 @@
+To create a binary tree using user input.
+To display the original and mirrored traversals side by side.
+To find the mirror image by swapping left and right children.
+To mirror the tree twice and verify that the original structure is restored.
+To compare the node count and height before and after mirroring.
