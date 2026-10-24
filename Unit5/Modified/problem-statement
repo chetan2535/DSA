@@ -1,0 +1,5 @@
+Develop a C++ program to represent computers as vertices and cable connections as weighted edges.
+Modify the program to:
+A. Update an edge weight and apply Kruskal’s algorithm again.
+B. Display every selected edge with its weight and the running total cost.
+C. Detect a disconnected graph and report whether a minimum spanning tree can be formed.
