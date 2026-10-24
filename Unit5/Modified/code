@@ -1,0 +1,101 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+struct Edge {
+    int u, v, w;
+};
+
+int parent[100];
+
+int find(int x) {
+    if (parent[x] == x) return x;
+    return parent[x] = find(parent[x]);
+}
+
+void kruskal(vector<Edge> e, int n) {
+    sort(e.begin(), e.end(),
+         [](Edge a, Edge b) { return a.w < b.w; });
+
+    for (int i = 0; i < n; i++)
+        parent[i] = i;
+
+    int cost = 0, count = 0;
+
+    cout << "\nSelected edges:\n";
+
+    for (auto x : e) {
+        int a = find(x.u);
+        int b = find(x.v);
+
+        if (a != b) {
+            parent[a] = b;
+            cost += x.w;
+            count++;
+
+            cout << x.u << " - " << x.v
+                 << " Weight: " << x.w
+                 << " Running Cost: " << cost << endl;
+        }
+    }
+
+    if (count == n - 1)
+        cout << "Minimum total cost = " << cost << endl;
+    else
+        cout << "Graph is disconnected. MST cannot be formed.\n";
+}
+
+int main() {
+    int n, m;
+    vector<Edge> e;
+
+    cout << "Enter number of computers and edges: ";
+    cin >> n >> m;
+
+    if (n < 1 || n > 100 || m < 0) {
+        cout << "Invalid input.\n";
+        return 0;
+    }
+
+    cout << "Enter source, destination and weight:\n";
+    for (int i = 0; i < m; i++) {
+        Edge x;
+        cin >> x.u >> x.v >> x.w;
+
+        if (x.u < 0 || x.u >= n ||
+            x.v < 0 || x.v >= n || x.u == x.v) {
+            cout << "Invalid edge.\n";
+            return 0;
+        }
+
+        e.push_back(x);
+    }
+
+    cout << "\nOriginal MST:";
+    kruskal(e, n);
+
+    int u, v, w;
+    cout << "\nEnter edge to update (u v new_weight): ";
+    cin >> u >> v >> w;
+
+    bool found = false;
+
+    for (auto &x : e) {
+        if ((x.u == u && x.v == v) ||
+            (x.u == v && x.v == u)) {
+            x.w = w;
+            found = true;
+            break;
+        }
+    }
+
+    if (found) {
+        cout << "\nUpdated MST:";
+        kruskal(e, n);
+    } else {
+        cout << "Edge not found.\n";
+    }
+
+    return 0;
+}
