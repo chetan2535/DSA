@@ -1,0 +1,4 @@
+To implement Kruskal’s algorithm to find the Minimum Spanning Tree (MST).
+To update an edge weight and recalculate the MST.
+To display selected edges and the running total cost.
+To detect disconnected graphs and check whether an MST is possible.
