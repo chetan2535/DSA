@@ -1,0 +1,2 @@
+Develop a C++ program to represent computers as vertices and cable links as weighted edges. 
+Apply Kruskal’s algorithm to connect all computers with minimum cable cost without forming cycles.
