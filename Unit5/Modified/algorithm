@@ -1,0 +1,12 @@
+Start.
+Read the number of computers and cable connections.
+Store all edges with their source, destination, and weight.
+Sort edges in ascending order of weight.
+Initialize the parent of each vertex.
+Select the smallest edge that does not form a cycle.
+Display each selected edge, its weight, and the running total cost.
+If fewer than  edges are selected, report that the graph is disconnected.
+Ask the user to update an edge weight.
+Apply Kruskal’s algorithm again using the updated weight.
+Display the new MST and total cost, or report that no spanning tree exists.
+Stop.
