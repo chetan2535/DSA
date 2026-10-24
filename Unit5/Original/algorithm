@@ -1,0 +1,8 @@
+Start.
+Read the number of computers and cable links.
+Enter the source, destination, and cost of each cable link.
+Sort all cable links in ascending order of cost.
+Select the minimum-cost link that does not form a cycle.
+Repeat until  links are selected, where  is the number of computers.
+Display the selected links and total cable cost.
+Stop.
