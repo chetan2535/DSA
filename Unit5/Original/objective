@@ -1,0 +1,4 @@
+To represent computers using a graph.
+To apply Kruskal’s algorithm to find a Minimum Spanning Tree (MST).
+To select minimum-cost cable links without cycles.
+To calculate the total cable installation cost.
